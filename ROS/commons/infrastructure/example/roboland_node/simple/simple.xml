@@ -1,0 +1,15 @@
+<library path="lib/libsimple_nodelet">
+
+  <class name="simple/Nodelet1" type="Nodelet1" base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet1
+    </description>
+  </class>
+
+  <class name="simple/Nodelet2" type="Nodelet2" base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet2
+    </description>
+  </class>
+
+</library>

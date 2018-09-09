@@ -1,0 +1,4 @@
+<launch>
+     <node name="lowerbodycore" pkg="lowerbodycore" type="lowerbodycore" />
+     <node name="odometry" pkg="odometry_base" type="odometry" />
+</launch>

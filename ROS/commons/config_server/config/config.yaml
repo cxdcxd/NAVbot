@@ -1,0 +1,149 @@
+server_node:
+  server:
+    cell_size: 1
+    joy_robot_index: 0
+    map_cell: 1
+    map_h: 15
+    map_w: 30
+    server_calculation_hz: 0
+    server_zone_min_error: 0.5
+    service_robot_count: 6
+    zmq_connection_string: tcp://192.168.177.183:5555
+service_robot_1:
+  service_robot:
+    battery_replacment_time: 6
+    battery_usage_idle: 0.1
+    battery_usage_lowerbody: 0.01
+    battery_usage_upperbody: 0.01
+    charging_rate: 0.01
+    laser_max_range: 500
+    laser_segments: 12
+    pick_time: 6
+    place_time: 6
+    robot_l: 56
+    robot_maxspeed_w: 200
+    robot_maxspeed_x: 200
+    robot_maxspeed_y: 0
+    serial_port_baud_rate: 115200
+    serial_port_name: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85531303431351D03140-if00
+    simulation_wait_ms: 10
+    zmq_connection_string: tcp://localhost:5558
+service_robot_2:
+  service_robot:
+    battery_replacment_time: 6
+    battery_usage_idle: 0.1
+    battery_usage_lowerbody: 0.01
+    battery_usage_upperbody: 0.01
+    charging_rate: 0.01
+    laser_max_range: 500
+    laser_segments: 12
+    pick_time: 6
+    place_time: 6
+    robot_l: 56
+    robot_maxspeed_w: 200
+    robot_maxspeed_x: 200
+    robot_maxspeed_y: 0
+    serial_port_baud_rate: 115200
+    serial_port_name: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85531303431351D03140-if00
+    simulation_wait_ms: 10
+    zmq_connection_string: tcp://localhost:5556
+service_robot_3:
+  service_robot:
+    battery_replacment_time: 6
+    battery_usage_idle: 0.1
+    battery_usage_lowerbody: 0.01
+    battery_usage_upperbody: 0.01
+    charging_rate: 0.01
+    laser_max_range: 500
+    laser_segments: 12
+    pick_time: 6
+    place_time: 6
+    robot_l: 56
+    robot_maxspeed_w: 200
+    robot_maxspeed_x: 200
+    robot_maxspeed_y: 0
+    serial_port_baud_rate: 115200
+    serial_port_name: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85531303431351D03140-if00
+    simulation_wait_ms: 10
+    zmq_connection_string: tcp://localhost:5556
+service_robot_4:
+  service_robot:
+    battery_replacment_time: 6
+    battery_usage_idle: 0.1
+    battery_usage_lowerbody: 0.01
+    battery_usage_upperbody: 0.01
+    charging_rate: 0.01
+    laser_max_range: 500
+    laser_segments: 12
+    pick_time: 6
+    place_time: 6
+    robot_l: 56
+    robot_maxspeed_w: 200
+    robot_maxspeed_x: 200
+    robot_maxspeed_y: 0
+    serial_port_baud_rate: 115200
+    serial_port_name: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85531303431351D03140-if00
+    simulation_wait_ms: 10
+    zmq_connection_string: tcp://localhost:5556
+service_robot_5:
+  service_robot:
+    battery_replacment_time: 6
+    battery_usage_idle: 0.1
+    battery_usage_lowerbody: 0.01
+    battery_usage_upperbody: 0.01
+    charging_rate: 0.01
+    laser_max_range: 500
+    laser_segments: 12
+    pick_time: 6
+    place_time: 6
+    robot_l: 56
+    robot_maxspeed_w: 200
+    robot_maxspeed_x: 200
+    robot_maxspeed_y: 0
+    serial_port_baud_rate: 115200
+    serial_port_name: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85531303431351D03140-if00
+    simulation_wait_ms: 10
+    zmq_connection_string: tcp://localhost:5556
+service_robot_6:
+  service_robot:
+    battery_replacment_time: 6
+    battery_usage_idle: 0.1
+    battery_usage_lowerbody: 0.01
+    battery_usage_upperbody: 0.01
+    charging_rate: 0.01
+    laser_max_range: 500
+    laser_segments: 12
+    pick_time: 6
+    place_time: 6
+    robot_l: 56
+    robot_maxspeed_w: 200
+    robot_maxspeed_x: 200
+    robot_maxspeed_y: 0
+    serial_port_baud_rate: 115200
+    serial_port_name: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0043_85531303431351D03140-if00
+    simulation_wait_ms: 10
+    zmq_connection_string: tcp://localhost:5556
+simulator:
+  simulation:
+    battery_replacment_time: 6
+    max_clean_time: 20
+    max_deliver_time: 60
+    max_eat_time: 20
+    max_kitchen_time: 50
+    max_user_time: 20
+    max_wait_time: 120
+    min_clean_time: 10
+    min_eat_time: 10
+    min_kitchen_time: 10
+    min_rush_time: 20
+    min_user_time: 10
+    min_wait_time: 90
+    pick_time: 6
+    place_time: 6
+    robots_count: 6
+    rush_time: 30
+    simulation_wait_ms: 10
+    tables_count: 24
+    tcp_buffer_size: 2048
+    tcp_port_number: 3000
+    zmq_connection_string: tcp://192.168.177.183:6100

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "main", "main\main.csproj", "{D6D7C554-AFAD-4B63-B3D8-79D35BE318D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matlab", "Matlab\Matlab.csproj", "{7C20B59B-602F-4A1B-BCA0-528C87D36CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{BB4B554E-01B4-48D4-A870-33BC9EA589E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6D7C554-AFAD-4B63-B3D8-79D35BE318D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D7C554-AFAD-4B63-B3D8-79D35BE318D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D7C554-AFAD-4B63-B3D8-79D35BE318D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D7C554-AFAD-4B63-B3D8-79D35BE318D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C20B59B-602F-4A1B-BCA0-528C87D36CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C20B59B-602F-4A1B-BCA0-528C87D36CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C20B59B-602F-4A1B-BCA0-528C87D36CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C20B59B-602F-4A1B-BCA0-528C87D36CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4B554E-01B4-48D4-A870-33BC9EA589E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4B554E-01B4-48D4-A870-33BC9EA589E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4B554E-01B4-48D4-A870-33BC9EA589E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4B554E-01B4-48D4-A870-33BC9EA589E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

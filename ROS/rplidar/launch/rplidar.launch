@@ -1,0 +1,21 @@
+<launch>
+  <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+  <param name="serial_port"         type="string" value="/dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0001-if00-port0"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  <param name="frame_id"            type="string" value="laser_link"/>
+  <param name="inverted"            type="bool"   value="false"/>
+  <param name="angle_compensate"    type="bool"   value="true"/>
+  </node>
+
+    <arg name="base_frame_name" default="base_link"/>
+    <arg name="laser_frame_name" default="laser_link"/>
+    <arg name="laser_frame_name2" default="camera_link"/>
+   
+
+    <node pkg="tf" type="static_transform_publisher" name="broadcaster_laserscan_base_to_laser" output="screen"
+        args="0 0 0 0 0 0 1 $(arg base_frame_name) $(arg laser_frame_name) 30"
+    />
+
+    <node name="sepantamapengine" pkg="map_server" type="sepantamapengine" />
+    <node name="cmd_watchdog" pkg="odometry_base" type="cmd_watchdog"/>
+</launch>

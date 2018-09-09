@@ -1,0 +1,10 @@
+<launch>
+    <arg name="base_frame_name" default="base_link"/>
+    <arg name="laser_frame_name" default="laser_link"/>
+   
+    <node pkg="tf" type="static_transform_publisher" name="broadcaster_laserscan_base_to_laser" output="screen"
+    args="-0.1 0 0 0 0 0 1 $(arg base_frame_name) $(arg laser_frame_name) 30" />
+
+    <node name="sepantamapengine" pkg="map_server" type="sepantamapengine" />
+    <node name="cmd_watchdog" pkg="odometry_base" type="cmd_watchdog"/>
+</launch>

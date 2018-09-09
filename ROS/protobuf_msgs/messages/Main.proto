@@ -1,0 +1,55 @@
+syntax = "proto2";
+
+message CarCommand {
+optional string cmd = 1;
+optional RVector3 target_location = 2;
+optional RVector3 temp_target_location = 3;
+optional int32 version = 4 [default = 0];
+optional uint64 time_span = 5 [default = 0];
+optional int32 speed1 = 6 [default = 0];
+optional int32 speed2 = 7 [default = 0];
+optional int32 position = 8 [default = 0];
+optional bool beep = 9 [default = false];
+optional bool led = 10 [default = false];
+ }
+
+message RVector3 {
+optional float x = 1 [default = 0];
+optional float y = 2 [default = 0];
+optional float theta = 3 [default = 0];
+}
+
+message CarRobot {
+optional int32 id = 1 [default = 0];
+optional RVector3 location = 2;
+optional RVector3 target_location = 3;
+optional RVector3 temp_target_location = 4;
+optional int32 state = 5 [default = 0];
+optional float battery = 6 [default = 0];
+repeated RVector3 path = 7;
+repeated RVector3 temp_path = 8;
+optional int32 temprature = 9 [default = 0];
+optional Laser laser = 10;
+optional int32 version = 11 [default = 0];
+optional uint64 time_span = 12 [default = 0];
+optional int32 speed1 = 13 [default = 0];
+optional int32 speed2 = 14 [default = 0];
+optional int32 position = 15 [default = 0];
+optional int32 load = 16 [default = 0];
+optional int32 sensor = 17 [default = 0];
+optional int32 alarm = 18 [default = 0];
+optional bytes map_data = 19;
+optional int32 map_size = 20 [default = 0];
+}
+
+message Laser {
+repeated float ranges = 1;
+optional int32 robot_id = 2 [default = 0];
+optional float angel_min = 3 [default = 0];
+optional float angel_max = 4 [default = 0];
+optional float angel_increment = 5 [default = 0];
+optional float range_min = 6 [default = 0];
+optional float range_max = 7 [default = 0];
+optional float time_increment = 8 [default = 0];
+optional float scan_time = 9 [default = 0];
+} 

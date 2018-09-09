@@ -1,0 +1,4 @@
+<launch>
+     <node name="sepantamapengine" pkg="map_server" type="sepantamapengine" />
+     <node name="cmd_watchdog" pkg="odometry_base" type="cmd_watchdog"/>
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+  <node type="nodelet" pkg="nodelet" name="nodelet_manager" args="manager" output="screen" />
+  <node type="nodelet" pkg="nodelet" name="Nodelet2" args="load simple/Nodelet2 nodelet_manager" output="screen"/>
+  <node type="nodelet" pkg="nodelet" name="Nodelet1" args="load simple/Nodelet1 nodelet_manager" output="screen"/>
+</launch>

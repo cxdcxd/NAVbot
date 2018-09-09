@@ -1,0 +1,4 @@
+<launch>
+  <node name="simple_node1" pkg="infrastructure" type="simple_node1" output="screen" />
+  <node name="simple_node2" pkg="infrastructure" type="simple_node2" output="screen" />
+</launch>
